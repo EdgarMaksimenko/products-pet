@@ -1,0 +1,42 @@
+.header{
+  border-bottom: 3px solid #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 40px;
+}
+.header__title{
+  font-size: 30px;
+  font-weight: bold;
+}
+.header__btns button{
+  margin-left: 20px;
+  padding: 5px 10px;
+  border: 1px solid black;
+  background: #000;
+  color: whitesmoke;
+}
+.products{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.products__item{
+  width: 22%;
+  background: rgba(255, 255, 255, 0.653);
+  margin-bottom: 20px;
+  padding: 15px 15px 50px 15px;
+}
+.products__item input{
+  margin-bottom: 10px;
+}
+.products__item p{
+  font-size: 20px;
+  text-align: center;
+  margin: 5px 0;
+}
+
+
+

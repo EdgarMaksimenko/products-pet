@@ -1,0 +1,59 @@
+.popup{
+  position: absolute;
+  left: calc(50% - 250px);
+  top: 20vh;
+  width: 500px;
+  background: rgba(0, 0, 0, 0.686);
+  border-radius: 10px;
+  visibility: hidden;
+  opacity: 0;
+}
+.popup.active{
+  visibility: visible;
+  opacity: 1;
+  transition: .4s;
+}
+.popup p{
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  padding: 60px 0;
+}
+.popup__inner{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.popup__inner span{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 15px;
+  height: 15px;
+  background: transparent;
+}
+.popup__inner span:hover{
+  cursor: pointer;
+}
+.popup__inner span:before{
+  position: absolute;
+  content: '';
+  width: 20px;
+  height: 4px;
+  background: red;
+  top: 6px;
+  left: -2px;
+  color: red;
+  transform: rotate(45deg);
+}
+.popup__inner span:after{
+  position: absolute;
+  content: '';
+  width: 20px;
+  height: 4px;
+  background: red;
+  top: 6px;
+  left: -2px;
+  color: red;
+  transform: rotate(-45deg);
+}

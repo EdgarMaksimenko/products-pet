@@ -1,0 +1,57 @@
+.circle{
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 100px;
+  animation: 2s infinite linear rotate;
+}
+.circle span{
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px black, 0 0 10px black, 0 0 10px black;
+}
+.circle span:nth-child(1){
+  left: calc(50% - 8px);
+  top: -8px;
+}
+.circle span:nth-child(2){
+  left: calc(50% - 8px);
+  bottom: -8px;
+}
+.circle span:nth-child(3){
+  left: -8px;
+  top: calc(50% - 8px);
+}
+.circle span:nth-child(4){
+  right: -8px;
+  top: calc(50% - 8px);
+}
+.circle span:nth-child(5){
+  right: 13px;
+  top: calc(15% - 8px);
+}
+.circle span:nth-child(6){
+  right: 13px;
+  bottom: calc(15% - 8px);
+}
+.circle span:nth-child(7){
+  left: 13px;
+  bottom: calc(15% - 8px);
+}
+.circle span:nth-child(8){
+  left: 13px;
+  top: calc(15% - 8px);
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}

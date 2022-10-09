@@ -1,0 +1,52 @@
+.header{
+  border-bottom: 3px solid #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 40px;
+}
+.header__title{
+  font-size: 30px;
+  font-weight: bold;
+}
+.header__btns button{
+  margin-left: 20px;
+  padding: 5px 10px;
+  border: 1px solid black;
+  background: #000;
+  color: whitesmoke;
+}
+.main form{
+  width: 400px;
+  background: rgba(0, 0, 0, 0.37);
+  padding: 15px;
+}
+.main form input, .main form select{
+  padding: 3px;
+  font-size: 20px;
+  margin: 10px 0;
+}
+.input__error{
+  font-size: 16px;
+  color: rgb(233, 72, 72);
+  text-align: center;
+  text-shadow: 0 0 5px black;
+  margin-top: -5px;
+  margin-bottom: -5px;
+}
+.field{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.field label{
+  font-size: 20px;
+  color: whitesmoke;
+}
+.description{
+  margin-top: 5px;
+  font-size: 16px;
+  color: whitesmoke;
+  text-align: center;
+}

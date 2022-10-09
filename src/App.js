@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import {Routes, Route, Navigate} from 'react-router-dom';
+import AddProduct from './components/AddProduct/AddProduct';
+import NotFound from './components/NotFound/NotFound';
+import PopUp from './components/PopUp/PopUp';
+import ProductList from './components/ProductList/ProductList';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div className="body-wrapper">
+      <PopUp/>
+      <div className="container">
+        <Routes>
+          <Route path ="/" exact={true} element={<ProductList/>}/>
+          <Route path ="/add-product" exact={true} element={<AddProduct/>}/>
+          <Route path="*" element={<Navigate to="/404" />} />
+          <Route path ="/404" element={<NotFound/>}/>
+        </Routes>
+      </div>  
+    </div> 
   );
 }
 
